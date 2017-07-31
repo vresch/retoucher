@@ -21,8 +21,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://api:key-a71e39570d5f292cc0931ba48d4d75a7@api.mailgun.net/v3/sandbox1209c8e5eede48ed9bc479c429e821c6.mailgun.org/messages",
+                url: "https://api.mailgun.net/v3/sandbox1209c8e5eede48ed9bc479c429e821c6.mailgun.org/messages",
                 type: "POST",
+                headers: {"Authorization": "Basic "+btoa("api:key-a71e39570d5f292cc0931ba48d4d75a7")},
                 data: {
                     'from': 'Mailgun Sandbox <postmaster@sandbox1209c8e5eede48ed9bc479c429e821c6.mailgun.org>',
                     'to': 'Max Vresch <max.vresch@gmail.com>',
