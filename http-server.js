@@ -3,10 +3,10 @@ var url = require('url')
 var fs = require('fs')
 var path = require('path')
 
-process.env.PWD = process.cwd()
-var baseDirectory = path.join(process.env.PWD, '/public')   // or whatever base directory you want
+//process.env.PWD = process.cwd()
+var baseDirectory = path.join(__dirname, '/public')   // or whatever base directory you want
 
-var port = 80
+var port = process.env.PORT || 80
 
 http.createServer(function (request, response) {
    try {
