@@ -5,8 +5,14 @@
  */
 
 .navbar {
+  border: 0 !important;
   margin: 0 0 0 0 !important;
 }
+
+.carousel {
+  min-height: 100px;
+}
+
 
 .carousel,
 .item,
@@ -22,8 +28,4 @@
 .carousel-control.right {
   background: none !important;
   filter: progid: none !important;
-}
-
-footer {
-    margin: 50px 0;
 }
