@@ -14,7 +14,7 @@ http.createServer(function (request, response) {
 
      // need to use path.normalize so people can't access directories underneath baseDirectory
      console.log(requestUrl.pathname)
-     var fsPath = requestUrl.pathname!=='/' ? path.join(baseDirectory, path.normalize(requestUrl.pathname)) : path.join(baseDirectory, 'index.html')
+     var fsPath = requestUrl.pathname !== '/' ? path.join(baseDirectory, path.normalize(requestUrl.pathname)) : path.join(baseDirectory, 'index.html')
 
      response.writeHead(200)
      var fileStream = fs.createReadStream(fsPath)
