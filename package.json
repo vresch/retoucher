@@ -2,10 +2,13 @@
   "name": "retoucher-portfolio",
   "version": "0.2.0",
   "description": "Web-site of retoucher Olga Grebennikova with e-mail form",
-  "scripts": {
-    "start": "node http-server.js"
-  },
   "engines": {
     "node": "8.1.4"
+  },
+  "dependencies": {
+    "mailgun-es6": "1.1.4"
+  },
+  "scripts": {
+    "start": "node http-server.js"
   }
 }
