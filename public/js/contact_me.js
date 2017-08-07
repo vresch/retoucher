@@ -27,7 +27,7 @@ $(function() {
                     'name': name,
                     'phone': phone,
                     'email': email,
-                    'text': message
+                    'message': message
                 },
                 cache: false,
                 success: function() {

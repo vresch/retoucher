@@ -1,6 +1,6 @@
 {
   "name": "retoucher-portfolio",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Web-site of retoucher Olga Grebennikova with e-mail form",
   "engines": {
     "node": "8.1.4"

@@ -17,9 +17,9 @@ http.createServer(function (request, response) {
        request.on('data', chunk => chunks.push(chunk))
        request.on('end', () => {
          const data = qs.parse(Buffer.concat(chunks).toString())
-         mail.sendMail(data).then (function (res, err) {
-            res ? response.writeHead(200) : response.writeHead(500)
-          })
+         mail.sendMail(data).then(function (res, err) {
+           res ? response.writeHead(200) : response.writeHead(500)
+         })
          response.end()
        })
      }

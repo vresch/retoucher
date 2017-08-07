@@ -7,13 +7,14 @@ var mailGun = new MailGun({
 
 var mail = {
   sendMail: function (data) {
-    var email = data.email
-    var message = 'From: ' + data.name + '. Phone: ' + data.phone + '\nMessage: ' + data.text
+    var from = data.name + ' <' + data.email + '>'
+    var text = 'Name: ' + data.name + '. Phone: ' + data.phone + '\nMessage: \n' + data.message
     return mailGun.sendEmail({
-      to: ['max.vresch@gmail.com', 'olha.grebennikova@gmail.com'],
-      from: email,
-      subject: 'New enquiry from grebol.ga',
-      text: message
+      to: 'olha.grebennikova@gmail.com',
+      cc: 'max.vresch@gmail.com',
+      from: from,
+      subject: '[grebol.ga] New enquiry',
+      text: text
     })
   }
 }
