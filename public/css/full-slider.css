@@ -1,0 +1,31 @@
+/*
+ * Start Bootstrap - Full Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+.navbar {
+  border: 0 !important;
+  margin: 0 0 0 0 !important;
+}
+
+.carousel {
+  min-height: 100px;
+}
+
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background: none !important;
+  filter: progid: none !important;
+}
