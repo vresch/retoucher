@@ -9,6 +9,10 @@ var mail = {
   sendMail: function (data) {
     var email = data.email
     var text = 'From: ' + data.name + '. Phone: ' + data.phone + '\nMessage: ' + data.message
+<<<<<<< HEAD
+=======
+    console.log(text)
+>>>>>>> dba1bd5e5009dc86680f001544cded01a17763c2
     return mailGun.sendEmail({
       to: ['olha.grebennikova@gmail.com'],
       cc: ['max.vresch@gmail.com'],
